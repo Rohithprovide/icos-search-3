@@ -200,13 +200,16 @@ path {
     color: var(--whoogle-dark-text) !important;
 }
 
-.search-icon-right:hover {
+.search-icon-right:hover,
+.search-icon-right.recording {
     background-color: var(--whoogle-dark-element-bg) !important;
     color: var(--whoogle-dark-contrast-text) !important;
+    transform: scale(1.1);
 }
 
 .search-icon-right.recording {
     color: #ea4335 !important;
+    animation: pulse 1.5s infinite;
 }
 }
 

@@ -100,6 +100,12 @@ This repository contains a Whoogle Search deployment wrapper for Replit. Whoogle
   - Eliminated "Whoogle Search v0.9.3" version text from footer
   - Removed GitHub link from footer template
   - Footer now displays as empty element
+- June 29, 2025. Enhanced microphone icon visual feedback:
+  - Added persistent hover effect during voice recording
+  - Microphone icon maintains hover styling (background, scale) while recording
+  - Implemented pulse animation with red color for active recording state
+  - Applied consistent styling across all theme files (main, light, dark, header)
+  - Users can now visually see when microphone is actively recording
 
 ## User Preferences
 

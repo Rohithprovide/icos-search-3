@@ -443,9 +443,16 @@ a.header-tab-a:visited {
 }
 
 /* Icon hover effects for header search */
-.search-icon-right:hover {
+.search-icon-right:hover,
+.search-icon-right.recording {
     background-color: #f1f3f4 !important;
     color: #202124 !important;
+    transform: scale(1.1);
+}
+
+.search-icon-right.recording {
+    color: #ea4335 !important;
+    animation: pulse 1.5s infinite;
 }
 
 .search-icon-right.recording {
