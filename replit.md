@@ -91,50 +91,15 @@ This repository contains a Whoogle Search deployment wrapper for Replit. Whoogle
 - Configurable proxy and Tor support for distributed deployment
 
 ## Changelog
-- June 29, 2025. Initial setup
-- June 29, 2025. UI improvements to search results page header:
-  - Fixed logo alignment with search bar
-  - Increased search bar width from 584px to 700px
-  - Removed blue focus border from search bar
-  - Improved logo positioning with proper centering
-- June 29, 2025. Enhanced autocomplete suggestions to integrate seamlessly with search bar:
-  - Modified CSS to make autocomplete suggestions appear as unified element with search bar
-  - Updated border-radius to connect search bar and suggestions (24px 24px 0 0 for search bar, 0 0 24px 24px for suggestions)
-  - Improved positioning to eliminate gaps between search bar and autocomplete dropdown
-  - Enhanced styling across all theme files (header.css, light-theme.css, main.css) for consistency
-  - Added proper z-index and positioning for optimal display
-- June 29, 2025. Corrected autocomplete to properly match Google's interface:
-  - Reverted to dropdown approach with seamless connection to search bar
-  - Search bar maintains normal size with suggestions appearing in clean dropdown below
-  - Modified border-radius to connect search bar (24px 24px 4px 4px) with dropdown (0 0 24px 24px)
-  - Reduced padding and improved spacing to match Google's compact design
-  - Positioned dropdown absolutely below search bar with proper z-index and shadows
-  - Updated all CSS files for consistent Google-like autocomplete appearance
-- June 29, 2025. Fixed autocomplete container visibility issue:
-  - Hidden autocomplete container by default (display: none)
-  - Only shows when it contains suggestions (:not(:empty) selector)
-  - Removed unwanted grey line that appeared below search bar
-  - Updated all CSS theme files for consistent behavior
-- June 29, 2025. Perfected Google-style autocomplete seamless connection:
-  - Search bar rounds only top corners when autocomplete is active (24px 24px 0 0)
-  - Autocomplete dropdown rounds only bottom corners (0 0 24px 24px)
-  - Removed bottom border from search bar when connected to dropdown
-  - Creates unified visual element exactly like Google's interface
-  - Applied consistent styling across all theme files
-- June 29, 2025. Implemented JavaScript-based dynamic autocomplete styling:
-  - Modified autocomplete.js to dynamically change search bar styling
-  - Search bar border-radius changes to "24px 24px 0 0" when suggestions appear
-  - Automatically resets to normal "24px" styling when suggestions disappear
-  - Updated CSS to use specific #autocomplete-list ID targeting
-  - Applied changes across all theme files for consistent behavior
-- June 29, 2025. Added functional search bar icons with hover effects and voice search:
-  - Created voice-search.js with Web Speech API integration
-  - Added Google-style hover effects for microphone icon (grey background, scale animation)
-  - Implemented voice recognition that fills search bar with spoken text
-  - Added visual feedback during recording (red color, pulse animation)
-  - Included error handling for microphone permissions and speech recognition
-  - Applied consistent hover styling across all theme files (light, dark, header)
-  - Microphone icon shows tooltip and handles browser compatibility
+- June 29, 2025. Initial repository clone and setup:
+  - Cloned IcosSearch repository from GitHub without code modifications
+  - Configured run button to start the application
+  - Installed required Python dependencies for Whoogle Search
+  - Application successfully running on port 5000
+- June 29, 2025. Removed footer branding:
+  - Eliminated "Whoogle Search v0.9.3" version text from footer
+  - Removed GitHub link from footer template
+  - Footer now displays as empty element
 
 ## User Preferences
 
