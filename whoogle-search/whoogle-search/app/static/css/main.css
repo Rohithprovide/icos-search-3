@@ -87,16 +87,24 @@ body:has(header) #main {
     transition: all 0.2s ease;
 }
 
-.search-icon-right:hover,
-.search-icon-right.recording {
-    background-color: #f1f3f4;
-    color: #202124;
-    transform: scale(1.1);
+/* High specificity selectors for microphone hover effect */
+.search-input-container .search-icon-right:hover,
+.search-input-container .search-icon-right.recording,
+.search-input-container .fa-microphone:hover,
+.search-input-container .fa-microphone.recording,
+i.fa-solid.fa-microphone.search-icon-right:hover,
+i.fa-solid.fa-microphone.search-icon-right.recording {
+    background-color: #f1f3f4 !important;
+    color: #202124 !important;
+    transform: scale(1.1) !important;
+    border-radius: 50% !important;
 }
 
-.search-icon-right.recording {
-    color: #ea4335;
-    animation: pulse 1.5s infinite;
+.search-input-container .search-icon-right.recording,
+.search-input-container .fa-microphone.recording,
+i.fa-solid.fa-microphone.search-icon-right.recording {
+    color: #ea4335 !important;
+    animation: pulse 1.5s infinite !important;
 }
 
 @keyframes pulse {

@@ -30,6 +30,11 @@ function initVoiceSearch() {
             
             // Reset microphone icon
             micIcon.classList.remove('recording');
+            // Reset inline styles
+            micIcon.style.backgroundColor = '';
+            micIcon.style.color = '';
+            micIcon.style.transform = '';
+            micIcon.style.borderRadius = '';
             isRecording = false;
         };
         
@@ -38,6 +43,11 @@ function initVoiceSearch() {
             console.log('Speech recognition error:', event.error);
             const micIcon = document.querySelector('.search-icon-right');
             micIcon.classList.remove('recording');
+            // Reset inline styles
+            micIcon.style.backgroundColor = '';
+            micIcon.style.color = '';
+            micIcon.style.transform = '';
+            micIcon.style.borderRadius = '';
             isRecording = false;
             
             // Show user-friendly error message
@@ -91,6 +101,15 @@ function startVoiceRecognition() {
         micIcon.classList.add('recording');
         isRecording = true;
         
+        // Force hover effect with inline styles as backup
+        micIcon.style.backgroundColor = '#f1f3f4';
+        micIcon.style.color = '#ea4335';
+        micIcon.style.transform = 'scale(1.1)';
+        micIcon.style.borderRadius = '50%';
+        
+        // Debug: Log to verify the class is added
+        console.log('Recording class added, element classes:', micIcon.className);
+        
         // Clear existing search text
         const searchInput = document.getElementById('search-bar');
         if (searchInput) {
@@ -99,6 +118,11 @@ function startVoiceRecognition() {
     } catch (error) {
         console.error('Error starting voice recognition:', error);
         micIcon.classList.remove('recording');
+        // Reset inline styles
+        micIcon.style.backgroundColor = '';
+        micIcon.style.color = '';
+        micIcon.style.transform = '';
+        micIcon.style.borderRadius = '';
         isRecording = false;
     }
 }
